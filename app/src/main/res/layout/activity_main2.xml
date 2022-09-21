@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <TextView
+        android:text="Insert a Fod"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ff00"
+        android:layout_marginTop="100dp"
+        android:id="@+id/m2_txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/m2_txtTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nhập tên 1 món ăn..."
+        android:id="@+id/m2_edtName"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/m2_edtName"
+        android:hint="Nhập mô tả..."
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:id="@+id/m2_edtDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nhập giá..."
+        app:layout_constraintTop_toBottomOf="@id/m2_edtDescribe"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/m2_edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Thêm"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/m2_edtPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"
+        android:id="@+id/m2_btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Hủy"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/m2_edtPrice"
+        app:layout_constraintLeft_toRightOf="@id/m2_btnAdd"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/m2_btnCancle"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
